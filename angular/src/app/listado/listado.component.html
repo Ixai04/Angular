@@ -1,0 +1,32 @@
+<table class="table table-bordered table-striped table-hover table-sm">
+    <thead class="table-dark">
+        <tr>
+            <th class="text-end">Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>OPCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes">
+            <th class="text-end">{{cliente.id}}</th>
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.apellido}}</td>
+            <td>
+                <a class="btn btn-sm btn-primary" routerLink="/formulario/{{cliente.id}}">Editar</a>
+                <button class="btn btn-sm btn-danger" (click)="borrar(cliente.id)">Borrar</button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot class="table-dark">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a class="btn btn-sm btn-primary" routerLink="/formulario">Nuevo</a>
+            </td>
+        </tr>
+
+    </tfoot>
+</table>

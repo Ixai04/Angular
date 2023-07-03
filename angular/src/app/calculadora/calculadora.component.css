@@ -1,0 +1,35 @@
+@import '../estilo-botones.css';
+
+div {
+    background-color: black;
+    --redondeo: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid black;
+    border-radius: var(--redondeo);
+    padding: 0.25rem;
+}
+
+app-generales {
+    grid-column-end: span 3;
+}
+
+app-numeros {
+    grid-row-start: 3;
+    grid-column-end: span 3;
+    grid-row-end: span 4;
+}
+
+app-aritmeticas {
+    grid-row-end: span 5;
+}
+
+input {
+    grid-column: span 4;
+    text-align: right;
+
+    border-radius: var(--redondeo) var(--redondeo) 0 0;
+
+    font-size: 2rem;
+    background-color: darkgray;
+}

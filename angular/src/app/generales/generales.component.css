@@ -1,0 +1,11 @@
+@import '../estilo-botones.css';
+
+div {
+    display: flex;
+}
+
+button {
+    background-color: gray;
+
+    width: 33.34%;
+}

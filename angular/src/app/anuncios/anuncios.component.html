@@ -1,0 +1,11 @@
+<aside>
+    <nav>
+        <ul>
+            <li *ngFor="let anuncio of anuncios">
+                <a href="{{anuncio.ruta}}">
+                    <img src="{{anuncio.foto}}" alt="{{anuncio.alternativo}}">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>

@@ -1,0 +1,14 @@
+@import '../estilo-botones.css';
+
+div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#cero {
+    grid-column-end: span 2;
+}
+
+button {
+    background-color: lightgray;
+}
